@@ -20,7 +20,7 @@ export default {
         'noto-sans': ['Noto Sans', 'sans-serif'],
       },
       colors: {
-        peach: '#FFA07A',
+        pink: '#D919FF',
         maroon: '#800000', 
       },
     },
