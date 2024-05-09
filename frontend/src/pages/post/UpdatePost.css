@@ -1,0 +1,43 @@
+.container {
+    margin: 0 auto;
+    width: 2/5;
+    border: 3px solid #3085d6; /* Adjust border color */
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  h2 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-update {
+    padding: 10px 20px;
+    background-color: #3085d6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-update:hover {
+    background-color: #2877c0;
+  }

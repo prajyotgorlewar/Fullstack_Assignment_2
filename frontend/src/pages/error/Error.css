@@ -1,0 +1,35 @@
+
+  #error-page {
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #fff; /* White background for content */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 500px; /* Limit container width */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .header {
+    font-size: 80px; /* Large heading */
+    color: #f00; /* Red error color */
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-size: 24px; /* Moderate heading size */
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .btns{
+    margin-top: 1rem;
+  }
