@@ -52,20 +52,13 @@ const seedUsers = async () => {
     let users = [
       {
         _id: userId1,
-        name: 'Utkarsh',
-        email: 'utkarsh@123',
+        name: 'Prajyot',
+        email: 'prajyot@123',
         password: '123',
         gender: 'Male',
         role: 'Admin',
       },
-      {
-        _id: userId2,
-        name: 'My_Utkarsh',
-        email: 'myutkarsh@123',
-        password: '456',
-        gender: 'Male',
-        role: 'Admin',
-      }
+
     ];
     for (let i = 0; i < 20; i++) {
       const user = {
