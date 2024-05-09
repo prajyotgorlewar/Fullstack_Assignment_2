@@ -3,6 +3,7 @@ import controlImage from './../../assets/image.png';
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import Register from '../../admin/users/pages/Register';
 
 const SideBarNav = () => {
     const navigate = useNavigate();
@@ -14,18 +15,21 @@ const SideBarNav = () => {
 
     const publicMenuList = [
         { title: "Login", to: "/" },
-        { title: "Register", to: "/" },
+        { title: "Register", to: "/register" },
     ];
 
     return (
         <div className="flex">
-            <div className={`w-96 bg-gray-800  ${isExpanded ? '' : 'hidden'} transition-all duration-500`}>
-                <div className="h-96 bg-white m-8 rounded-xl p-4 ">
+            <div className={`w-48 bg-gray-800  ${isExpanded ? '' : 'hidden'} transition-all duration-500`}>
+                <div className="h-96 bg-white m-4 rounded-xl p-2 ">
                     {/* Menu Items */}
                     <ul className='m-2'>
                         {publicMenuList.map((item, index) => (
-                            <li key={index} className="flex gap-1 p-2  bg-white text-gray-800 border-2 border-gray-800 group hover:bg-gray-800 hover:text-white font-bold rounded-md mt-3 transition-all duration-300">
-                                <span>{item.title}</span>
+                            <li key={index} className="flex gap-1 p-1  bg-white text-gray-800 border-2 border-gray-800 group hover:bg-gray-800 hover:text-white font-bold rounded-md mt-3 transition-all duration-300">
+                                <Link to={item.to}>
+                                    <span>{item.title}</span>
+                                </Link>
+                                
                             </li>
                         ))}
                     </ul>
