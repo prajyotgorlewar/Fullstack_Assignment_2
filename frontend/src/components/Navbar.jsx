@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="bg-gray-200 flex justify-between px-5 py-3 navbar border-5 border-b-gray-600">
+            <div className="bg-orange-500 flex justify-between px-5 py-3 navbar border-5">
                 <div className="logo text-black  bg-transperent rounded-sm   ">
                     <h3 className="font-bold text-xl  cursor-pointer">BoomBlogs</h3>
                 </div>

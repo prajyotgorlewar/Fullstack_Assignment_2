@@ -83,7 +83,7 @@ const AdminUpdatePost = () => {
 
 
   return (
-    <div className="bg-slate-600 py-3">
+    <div className="bg-black py-3">
       <div className="add-post-container bg-slate-200">
         <h2 className='text-center text-3xl text-blue-600 font-bold'>Edit Post</h2>
         <form onSubmit={handleSubmit}  className="add-post-form">
@@ -118,7 +118,7 @@ const AdminUpdatePost = () => {
             />
           </div>
           <div className="text-center">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary bg-black">
               Update
             </button>
           </div>

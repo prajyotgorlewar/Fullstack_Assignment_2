@@ -62,7 +62,7 @@ const Login = () => {
                 <main>
                     <div className="h-screen section-registration p-3 bg-white">
                         <div className="font-bold text-center text-2xl text-white">Login Here</div>
-                        <div className="container w-2/5 flex-column items-center border-white border-4 rounded-lg p-3 px-5 bg-gray-300 mt-3" >
+                        <div className="container w-2/5 flex-column items-center border-white border-4 rounded-lg p-3 px-5 bg-orange-300 mt-3" >
                             <form action="" onSubmit={handleSubmit}>
                                 <div className="form-group my-2">
                                     <label htmlFor="email" className="font-semibold ">Email</label>
@@ -80,7 +80,7 @@ const Login = () => {
                                     <div className="text-red-500 text-sm mb-2">Invalid credentials</div>
                                 )}
                                 <div className="text-center">
-                                    <button type="submit" className="btn btn-primary text-center bg-gray-600 mt-3" >Login</button>
+                                    <button type="submit" className="btn btn-primary text-center bg-gray-900 mt-3" >Login</button>
                                 </div>
                                
                             </form>

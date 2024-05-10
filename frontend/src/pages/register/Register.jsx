@@ -66,7 +66,7 @@ const Register = () => {
                 <main>
                     <div className="h-screen section-registration pt-3 bg-white">
                         <div className="font-bold text-center text-2xl text-white">SIGN UP</div>
-                        <div className="container w-2/5 flex-column items-center border-white border-4 rounded-lg p-3 px-5 bg-gray-300 mt-3">
+                        <div className="container w-2/5 flex-column items-center border-white border-4 rounded-lg p-3 px-5 bg-orange-300 mt-3">
                             <form onSubmit={handleSubmit}>
                                 <div className="form-group my-2">
                                     <label htmlFor="name" className="font-semibold">Name</label>
@@ -124,7 +124,7 @@ const Register = () => {
                                     </div>
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="btn btn-primary text-center bg-gray-600 mt-3">Register</button>
+                                    <button type="submit" className="btn btn-primary text-center bg-gray-900 mt-3">Register</button>
                                 </div>
                                 
                             </form>

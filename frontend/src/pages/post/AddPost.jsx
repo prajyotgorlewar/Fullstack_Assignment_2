@@ -54,9 +54,9 @@ const AddPost = () => {
     };
 
     return (
-        <div className="bg-slate-600 py-4">
-            <div className="add-post-container bg-slate-200">
-                <h2 className='text-center text-3xl text-blue-600 font-bold'>Add Post</h2>
+        <div className="bg-black py-4">
+            <div className="add-post-container bg-orange-300">
+                <h2 className='text-center text-3xl text-black font-bold'>Add Post</h2>
                 <form onSubmit={handleSubmit} className="add-post-form">
                     <div className="form-group">
                         <label htmlFor="author">Author:</label>
@@ -89,7 +89,7 @@ const AddPost = () => {
                         />
                     </div>
                     <div className='flex justify-center'>
-                        <button type="submit" className="btn btn-primary">
+                        <button type="submit" className="btn btn-primary bg-black">
                             Add Post
                         </button>
                     </div>
