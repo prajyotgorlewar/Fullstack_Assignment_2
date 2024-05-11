@@ -116,14 +116,14 @@ const ViewUser = () => {
           </button>
           <button
             type="button"
-            className={`btn btn-outline-primary ${filter === "Admin" ? "active border border-primary" : ""}`}
+            className={`btn btn-outline-primary ${filter === "Admin" ? "active border  border-primary" : ""}`}
             onClick={() => setFilter("Admin")}
           >
             Admins
           </button>
         </div>
 
-        <table className="table">
+        <table className="table bg-black">
           <thead>
             <tr>
               <th>Name</th>

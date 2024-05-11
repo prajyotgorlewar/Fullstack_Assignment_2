@@ -29,13 +29,13 @@ const ViewPost = () => {
   }, []);
 
   return (
-    <div className="view-post-container bg-gradient-to-br from-orange-300 to-peach-400 min-h-screen flex flex-col justify-center items-center">
+    <div className="view-post-container bg-black min-h-screen flex flex-col justify-center items-center">
       {isLoading && <div className="loading">Loading...</div>}
 
       {error && <div className="error">Error: {error}</div>}
 
       {post && (
-        <div className="post-wrapper max-w-2xl p-8 rounded shadow-md bg-black flex flex-col gap-4 custom-class">
+        <div className="post-wrapper max-w-2xl p-8 rounded border-orange-500 border-3 font-mono font-bold bg-black">
           <h2 className="text-2xl font-semibold bg-white text-black w-fit p-2 rounded-xl">{post.title}</h2>
 
           <div>
@@ -44,11 +44,11 @@ const ViewPost = () => {
             </div>
             <br></br>
             <div className="container bg-white text-black rounded-xl">
-              <p className="text-gray-200 text-black">{post.detail}</p>
+              <p className=" text-black">{post.detail}</p>
             </div>
             <div className="my-2">
               <div></div>
-              <div className="bg-white text-black text-center cursor-pointer rounded-xl">
+              <div className="bg-white text-black mx-48 my-4 text-center cursor-pointer rounded-xl">
                 <p className="text-bold text-lg">Author: {post.author}</p>
               </div>
             </div>
@@ -58,7 +58,7 @@ const ViewPost = () => {
                 <div>Updated At: {timeSince(post.updatedAt)}</div>
               </div>
               <div>
-                <a href="/" className="btn btn-primary px-4 py-2 rounded-md text-black bg-orange-500 hover:bg-orange-400 focus:outline-none">Back</a>
+                <a href="/" className="btn btn-primary px-4 py-2 rounded-md text-black bg-orange-500 hover:bg-white">Back</a>
               </div>
             </div>
           </div>

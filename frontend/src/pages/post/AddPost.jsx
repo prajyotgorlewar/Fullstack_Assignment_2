@@ -55,10 +55,10 @@ const AddPost = () => {
 
     return (
         <div className="bg-black py-4">
-            <div className="add-post-container bg-orange-300">
-                <h2 className='text-center text-3xl text-black font-bold'>Add Post</h2>
+            <div className="add-post-container bg-black border-orange-500 border-3 rounded-lg mb-16">
+                <h2 className='text-center text-3xl text-white'>Add Post</h2>
                 <form onSubmit={handleSubmit} className="add-post-form">
-                    <div className="form-group">
+                    <div className="form-group text-white ">
                         <label htmlFor="author">Author:</label>
                         <input
                             type="text"
@@ -67,7 +67,7 @@ const AddPost = () => {
                             disabled
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group text-white">
                         <label htmlFor="title">Title:</label>
                         <input
                             type="text"
@@ -78,7 +78,7 @@ const AddPost = () => {
                             required
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group text-white">
                         <label htmlFor="detail">Detail:</label>
                         <textarea
                             id="detail"
@@ -89,7 +89,7 @@ const AddPost = () => {
                         />
                     </div>
                     <div className='flex justify-center'>
-                        <button type="submit" className="btn btn-primary bg-black">
+                        <button type="submit" className="btn btn-primary text-black bg-orange-500 hover:bg-white">
                             Add Post
                         </button>
                     </div>

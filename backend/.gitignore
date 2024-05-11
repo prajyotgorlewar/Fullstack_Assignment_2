@@ -1,7 +1,7 @@
 # .gitignore - list of file path patterns not to be tracked by source control
 
 # NodeJS dependencies can be downloaded
-# /node_modules
+/node_modules
 
 # Local variables are specific to local system only
 .env

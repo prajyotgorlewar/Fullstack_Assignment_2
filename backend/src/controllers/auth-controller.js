@@ -83,5 +83,7 @@ const user = async(req,res)=>{
 
 
 
+
+
 const authcontrollers={ home, register,login,user } 
 export default authcontrollers ;

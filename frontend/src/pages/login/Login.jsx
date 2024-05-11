@@ -60,18 +60,18 @@ const Login = () => {
         <>
             <section >
                 <main>
-                    <div className="h-screen section-registration p-3 bg-white">
+                    <div className="h-screen section-registration p-3 bg-black font-mono">
                         <div className="font-bold text-center text-2xl text-white">Login Here</div>
-                        <div className="container w-2/5 flex-column items-center border-white border-4 rounded-lg p-3 px-5 bg-orange-300 mt-3" >
+                        <div className="container w-2/5 flex-column items-center border-orange-500 border-4 rounded-lg p-3 px-5 bg-black mt-3" >
                             <form action="" onSubmit={handleSubmit}>
                                 <div className="form-group my-2">
-                                    <label htmlFor="email" className="font-semibold ">Email</label>
+                                    <label htmlFor="email" className="font-semibold text-white ">Email</label>
                                     <input type="email" className="form-control rounded-md"
                                         name="email" id="email" placeholder="Enter your email"
                                         autoComplete="off" onChange={handleInput} required />
                                 </div>
                                 <div className="form-group my-2">
-                                    <label htmlFor="password" className="font-semibold ">Password</label>
+                                    <label htmlFor="password" className="font-semibold text-white">Password</label>
                                     <input type="password" className="form-control rounded-md"
                                         name="password" id="password" placeholder="Enter your password"
                                         autoComplete="off" onChange={handleInput} required />
@@ -80,7 +80,7 @@ const Login = () => {
                                     <div className="text-red-500 text-sm mb-2">Invalid credentials</div>
                                 )}
                                 <div className="text-center">
-                                    <button type="submit" className="btn btn-primary text-center bg-gray-900 mt-3" >Login</button>
+                                    <button type="submit" className="btn btn-primary text-center text-black font-bold bg-orange-400 mt-3 hover:bg-white" >Login</button>
                                 </div>
                                
                             </form>

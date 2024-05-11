@@ -9,38 +9,43 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="bg-orange-500 flex justify-between px-5 py-3 navbar border-5">
-                <div className="logo text-black  bg-transperent rounded-sm   ">
-                    <h3 className="font-bold text-xl  cursor-pointer">BoomBlogs</h3>
+            <div className="bg-black p-2">
+                <div className="bg-orange-500 flex justify-between  py-2 navbar border-5  rounded-xl border-black border ">
+                    <div className="logo text-black  bg-transperent rounded-sm  pl-8 ">
+                        <h3 className="font-bold text-4xl  cursor-pointer">BoomBlogs</h3>
+                    </div>
+                    <nav className="flex pr-2">
+                        <ul className="flex gap-4 font-mono text-xl bg-white rounded-md px-4 py-2">
+                            <li className="hover:bg-black hover:text-white rounded-md px-2"><NavLink to="/">Home</NavLink></li>
+                            {(isLoggedIn) ? (
+                                <>
+                                    {isAdmin && (
+                                        <>
+                                            <li className="hover:bg-black hover:text-white rounded-md px-2"><NavLink to="/admin/viewUsers">View User</NavLink></li>
+                                        </>
+                                    )}
+                                    {isAdmin && (
+                                        <>
+                                            <li className="hover:bg-black hover:text-white rounded-md px-2">
+                                                <NavLink to="/admin/addPost" className=" ">Add Post</NavLink>
+                                            </li>
+                                            <li className="hover:bg-black hover:text-white rounded-md px-2">
+                                                <NavLink to="/admin/yourPosts" className=" ">Your Posts</NavLink>
+                                            </li>
+                                        </>
+                                    )}
+
+                                    <li className="hover:bg-black hover:text-white rounded-md px-2"><NavLink to="/logout">Logout</NavLink></li>
+                                </>
+                            ) : (
+                                <>
+                                    <li className="hover:bg-black hover:text-white rounded-md px-2"><NavLink to="/register">Register</NavLink></li>
+                                    <li className="hover:bg-black hover:text-white rounded-md px-2"><NavLink to="/login">Login</NavLink></li>
+                                </>
+                            )}
+                        </ul>
+                    </nav>
                 </div>
-                <nav className="flex pr-16">
-                    <ul className="flex gap-4 font-bold text-xl">
-                        <li className={myClass}><NavLink to="/">Home</NavLink></li>
-                        {(isLoggedIn) ? (
-                            <>
-                                {isAdmin && <li className="dropdown">
-                                    <span className={`${myClass} cursor-pointer`}>User</span>
-                                    <ul className="dropdown-content bg-gray-200 border-2 shadow-md border-gray-600">
-                                        <li className=""><NavLink to="/admin/viewUsers">View User</NavLink></li>
-                                    </ul>
-                                </li>}
-                                {isAdmin &&<li className="dropdown">
-                                <span className={`${myClass} cursor-pointer`}>Posts</span>
-                                    <ul className="dropdown-content bg-gray-200 border-2 shadow-md border-gray-600">
-                                        <li className=""><NavLink to="/admin/addPost">Add Post</NavLink></li>
-                                        <li className=""><NavLink to="/admin/yourPosts">Your Posts</NavLink></li>
-                                    </ul>
-                                </li>}
-                                <li className={myClass}><NavLink to="/logout">Logout</NavLink></li>
-                            </>
-                        ) : (
-                            <>
-                                <li className={myClass}><NavLink to="/register">Register</NavLink></li>
-                                <li className={myClass}><NavLink to="/login">Login</NavLink></li>
-                            </>
-                        )}
-                    </ul>
-                </nav>
             </div>
         </header>
     );
