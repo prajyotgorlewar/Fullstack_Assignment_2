@@ -67,7 +67,7 @@ const AddPost = () => {
                             disabled
                         />
                     </div>
-                    <div className="form-group text-white">
+                    <div className="form-group text-black">
                         <label htmlFor="title">Title:</label>
                         <input
                             type="text"
@@ -78,7 +78,7 @@ const AddPost = () => {
                             required
                         />
                     </div>
-                    <div className="form-group text-white">
+                    <div className="form-group text-black">
                         <label htmlFor="detail">Detail:</label>
                         <textarea
                             id="detail"
